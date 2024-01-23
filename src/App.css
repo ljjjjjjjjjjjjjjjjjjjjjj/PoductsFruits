@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.app {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centruoja turinį ekrano viduryje */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Sukuria vienodą tarpą tarp kortelių */
+  gap: 20px; /* Atstumas tarp kortelių */
 }
 
-.App-link {
-  color: #61dafb;
+.product-card {
+  flex-basis: calc(33.333% - 20px); /* Kiekvienai kortelei skiria 1/3 ekrano pločio, atėmus tarpą */
+  box-sizing: border-box; /* Užtikrina, kad paddingai ir rėmeliai nepraplėstų kortelės */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Atsakomasis stilius mažesniems ekranams */
+@media (max-width: 768px) {
+  .product-card {
+    flex-basis: calc(50% - 20px); /* Dvi kortelės eilutėje mažesniuose ekranuose */
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    flex-basis: 100%; /* Viena kortelė eilutėje labai mažuose ekranuose */
   }
+}
+
+/* Papildomi stiliai palyginimo lentelės komponentui, jei reikia */
+.comparison-table {
+  margin-top: 30px; /* Atstumas nuo produktų sąrašo iki lentelės */
+  width: 100%;
+  border-collapse: collapse; /* Pašalina tarpus tarp lentelės ląstelių */
+}
+
+.comparison-table td,
+.comparison-table th {
+  border: 1px solid #e0e0e0; /* Plonas rėmelis aplink ląsteles */
+  padding: 8px; /* Truputis vietos aplink tekstą ląstelėje */
+  text-align: left; /* Teksto išlyginimas kairėje ląstelės pusėje */
 }
