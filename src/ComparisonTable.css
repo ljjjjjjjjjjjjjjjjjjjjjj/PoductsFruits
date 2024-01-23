@@ -1,0 +1,18 @@
+.comparison-table {
+  margin-top: 20px; /* Atstumas nuo viršutinių elementų */
+  border-collapse: collapse; /* Pašalina tarpus tarp lentelės ląstelių */
+  width: 100%; /* Lentelės plotis */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lengvas šešėlis aplink lentelę */
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 10px; /* Truputis vietos aplink tekstą ląstelėje */
+  border: 1px solid #ddd; /* Plonas rėmelis aplink ląsteles */
+  text-align: left; /* Teksto išlyginimas į kairę */
+}
+
+.comparison-table th {
+  background-color: #f8f8f8; /* Šviesesnė fono spalva antraštėms */
+  font-weight: bold; /* Paryškintas šriftas antraštėms */
+}

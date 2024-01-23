@@ -1,11 +1,12 @@
 .product-card {
-    width: 200px; /* arba kitas pageidaujamas plotis */
-    border: 1px solid #e0e0e0; /* plonas rėmelis aplink kortelę */
+    height: auto;
+    width: calc(33.333% - 32px); /*  32px for border and margin combined */
+    border: 1px solid #e0e0e0; /* border replaces margin */
     border-radius: 8px; /* apvalinti kampai */
     overflow: hidden; /* užtikrina, kad viskas liktų kortelės ribose */
     background-color: #fff; /* balta fono spalva */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* švelnus šešėlis po kortele */
-    margin: 16px; /* atstumas nuo kitų elementų */
+    margin: 1px; /* atstumas nuo kitų elementų */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* animacija paspaudus */
   }
   
@@ -15,9 +16,10 @@
   }
   
   .product-card img {
-    width: 100%; /* vaizdas užpildo kortelės plotį */
+    width: 80%; /* vaizdas užpildo kortelės plotį */
     height: auto; /* vaizdo aukštis automatiškai pritaikomas */
     display: block; /* pašalina bet kokius tarpus po vaizdu */
+    margin: 0 auto; /* Center the image horizontally */
   }
   
   .product-card h3 {
@@ -27,10 +29,12 @@
   }
   
   .product-card p {
-    font-size: 1em; /* šrifto dydis kainai */
+    font-size: 0.8em; /* šrifto dydis kainai */
     margin: 0.5em; /* atstumas nuo kortelės kraštų */
     color: #888; /* šviesesnė teksto spalva */
     font-weight: bold; /* pabrėžiama kaina */
   }
+
+
   
   

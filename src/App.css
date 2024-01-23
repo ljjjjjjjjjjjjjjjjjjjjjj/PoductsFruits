@@ -7,7 +7,7 @@
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Sukuria vienodą tarpą tarp kortelių */
+  justify-content: space-between; /* Sukuria vienodą tarpą tarp kortelių ir išlygina prieš tai buvusią pustuštę vietą */
   gap: 20px; /* Atstumas tarp kortelių */
 }
 
@@ -25,7 +25,7 @@
 
 @media (max-width: 480px) {
   .product-card {
-    flex-basis: 100%; /* Viena kortelė eilutėje labai mažuose ekranuose */
+    flex-basis: calc(100% - 20px); /* Viena kortelė eilutėje mažesniuose ekranuose */
   }
 }
 

@@ -1,34 +1,33 @@
 import './App.css';
-import ComparisonTable from './ComparisonTable.js';
-import ProductCard from './ProductCard.js'
-
+import ComparisonTable from './ComparisonTable';
+import ProductCard from './ProductCard';
 
 function App() {
   const products = [
     {
       name: "Cherry",
       price: "$1.99",
-      imageUrl: "/images/cherries.png"
+      imageUrl: "/images/cherry.png"
 
     },
     {
-      name: "Avocado",
+      name: "Orange",
       price: "$1.99",
-      imageUrl: "/images/avocados.png"
+      imageUrl: "/images/orange.png"
 
     },
     {
-      name: "Bananas",
+      name: "Nuts",
       price: "$1.99",
-      imageUrl: "/images/bananas.png"
+      imageUrl: "/images/nuts.png"
 
     },
     {
-      name: "Watermelon",
+      name: "Strawberry",
       price: "$1.99",
-      imageUrl: "/images/watermelon.png"
+      imageUrl: "/images/strawberry.png"
 
-    },
+    }
   ];
 
   return (
@@ -39,9 +38,11 @@ function App() {
           <ProductCard key={product.name} product={product} />
         ))}
       </div>
-      <ComparisonTable products={products} />
+          <ComparisonTable products={products} />
     </div>
   );
 }
 
 export default App;
+
+
