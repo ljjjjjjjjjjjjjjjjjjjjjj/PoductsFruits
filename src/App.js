@@ -7,33 +7,39 @@ const busimiDuomenys =  [
   {
     name: "Cherry",
     price: "$1.99",
+    weight: "1.00 kg",
     imageUrl: "/images/cherry.png"
 
   },
   {
     name: "Orange",
     price: "$1.99",
+    weight: "1.00 kg",
     imageUrl: "/images/orange.png"
 
   },
   {
     name: "Nuts",
     price: "$1.99",
+    weight: "1.00 kg",
     imageUrl: "/images/nuts.png"
 
   },
   {
     name: "Strawberry",
     price: "$1.99",
+    weight: "1.00 kg",
     imageUrl: "/images/strawberry.png"
 
   }
 ];
 
-const fetchData = () => {
-  return new Promise( (resolve, reject) => {
+const fetchData = () => {                         // function    =   () => {}    
+
+  return new Promise( (resolve, reject) => {      // new Promise (   () => {}    )
   
     setTimeout( () => {
+
       const success = Math.random() > 0.3; // 70% tikimybe
       if(success){
         resolve ( busimiDuomenys );
@@ -66,8 +72,8 @@ function App() {
     <div className="app">
       <h1>Compare Products</h1>
       <div className="product-list">
-        {products.map(product => (
-          <ProductCard key={product.name} product={product} />
+        {products.map( pr => (
+          <ProductCard key={pr.name} produktas={pr} />
         ))}
       </div>
           <ComparisonTable products={products} />

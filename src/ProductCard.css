@@ -1,6 +1,6 @@
 .product-card {
     height: auto;
-    width: calc(33.333% - 32px); /*  32px for border and margin combined */
+    width: calc(25% - 32px); /*  32px for border and margin combined */
     border: 1px solid #e0e0e0; /* border replaces margin */
     border-radius: 8px; /* apvalinti kampai */
     overflow: hidden; /* užtikrina, kad viskas liktų kortelės ribose */
@@ -30,6 +30,7 @@
   
   .product-card p {
     font-size: 0.8em; /* šrifto dydis kainai */
+    padding-left: 2%;
     margin: 0.5em; /* atstumas nuo kortelės kraštų */
     color: #888; /* šviesesnė teksto spalva */
     font-weight: bold; /* pabrėžiama kaina */
