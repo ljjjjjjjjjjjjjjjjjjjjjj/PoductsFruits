@@ -2,34 +2,42 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import ComparisonTable from './ComparisonTable';
 import ProductCard from './ProductCard';
+import './custom-bootstrap.css';
+
+
 
 const busimiDuomenys =  [
   {
     name: "Cherry",
     price: "$1.99",
     weight: "1.00 kg",
-    imageUrl: "/images/cherry.png"
+    imageUrl: `/images/Cherry.png`
+    // imageUrl: "/images/cherry.png"
 
   },
   {
     name: "Orange",
     price: "$1.99",
     weight: "1.00 kg",
-    imageUrl: "/images/orange.png"
+    imageUrl: `/images/Orange.png`
+    //imageUrl: "/images/orange.png"
 
   },
   {
     name: "Nuts",
     price: "$1.99",
     weight: "1.00 kg",
-    imageUrl: "/images/nuts.png"
+    imageUrl: `/images/Nuts.png`
+    //imageUrl: "/images/nuts.png"
+
 
   },
   {
     name: "Strawberry",
     price: "$1.99",
     weight: "1.00 kg",
-    imageUrl: "/images/strawberry.png"
+    imageUrl: `/images/Strawberry.png`
+    //imageUrl: "/images/Strawberry.png"
 
   }
 ];

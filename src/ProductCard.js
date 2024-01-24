@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './ProductCard.css';
+import './custom-bootstrap.css';
+import config from './config.js';
 
 
 function ProductCard({produktas, onButtonClick }) {
@@ -14,7 +16,7 @@ function ProductCard({produktas, onButtonClick }) {
 
     return (
       <div className="product-card">
-        <img src={product.imageUrl} alt={product.name} />
+        <img src={ config + product.imageUrl} alt={product.name} />
         <h3>{product.name}</h3>
         <p> {product.price}&nbsp;&nbsp;({product.weight})</p>
         <button type="button" className="btn btn-primary" onClick={handleButtonClick}> 
